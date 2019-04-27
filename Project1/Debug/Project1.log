@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\github\my\currencyconverter\project1\source.cpp(90): warning C4101: hdc: неиспользованная локальная переменная
+d:\github\my\currencyconverter\project1\source.cpp(89): warning C4101: ps: неиспользованная локальная переменная
+d:\github\my\currencyconverter\project1\source.cpp(91): warning C4101: rt: неиспользованная локальная переменная
+  Project1.vcxproj -> D:\GitHub\my\CurrencyConverter\Debug\Project1.exe
