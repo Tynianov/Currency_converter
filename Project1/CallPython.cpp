@@ -2,6 +2,21 @@
 
 CallPython::CallPython() : pResult(NULL)
 {
+
+}
+
+
+CallPython::~CallPython()
+{
+	//Py_DECREF(pName);
+	//Py_DECREF(pModule);
+	//Py_DECREF(pResult);
+	//Py_DECREF(sysPath);
+	Py_Finalize();
+}
+
+float CallPython::convertCurrency(float money_amount, char *from_currency, char *to_currency)
+{
 	Py_Initialize();
 
 	sysPath = PySys_GetObject("path");
@@ -9,20 +24,8 @@ CallPython::CallPython() : pResult(NULL)
 
 	PyObject *pName = PyUnicode_FromString("python_code");
 	PyObject *pModule = PyImport_Import(pName);
-}
 
 
-CallPython::~CallPython()
-{
-	Py_DECREF(pName);
-	Py_DECREF(pModule);
-	Py_DECREF(pResult);
-	Py_DECREF(sysPath);
-	Py_Finalize();
-}
-
-float CallPython::convertCurrency(float money_amount, char *from_currency, char *to_currency)
-{
 	if (pModule != NULL) {
 		PyObject *pDict = PyModule_GetDict(pModule);
 		PyObject *pFunc = PyDict_GetItem(pDict, PyUnicode_FromString("convert_money"));

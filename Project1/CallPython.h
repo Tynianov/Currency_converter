@@ -23,6 +23,5 @@ public:
 	~CallPython();
 
 	float convertCurrency(float,char*,char*);
-
 };
 
