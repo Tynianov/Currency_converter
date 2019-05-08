@@ -133,6 +133,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		switch (wParam)
 		{
 		case CONVERT_BUTTON:
+			SetWindowText(resultField, 0);
+			tempBuff.str(std::string());
 			float sumOfMoney;
 			float result;
 			GetWindowText(textField, buff, 10);
@@ -146,7 +148,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			result = call.convertCurrency(sumOfMoney, from, to);
 			tempBuff << result;
 			SetWindowText(resultField,tempBuff.str().c_str());
-
+			//SetDlgItemTextA(resultField,RESULT_FIELD,tempBuff.str().c_str());
 			break;
 		
 		case CBN_SELCHANGE:

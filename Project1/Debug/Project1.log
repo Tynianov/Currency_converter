@@ -1,7 +1,7 @@
 ﻿  Source.cpp
-d:\github\my\currencyconverter\project1\source.cpp(139): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\github\my\currencyconverter\project1\source.cpp(141): warning C4244: =: преобразование "double" в "float", возможна потеря данных
 d:\github\my\currencyconverter\project1\source.cpp(96): warning C4101: hdc: неиспользованная локальная переменная
 d:\github\my\currencyconverter\project1\source.cpp(95): warning C4101: ps: неиспользованная локальная переменная
 d:\github\my\currencyconverter\project1\source.cpp(97): warning C4101: rt: неиспользованная локальная переменная
-d:\github\my\currencyconverter\project1\source.cpp(172): warning C4018: <: несоответствие типов со знаком и без знака
+d:\github\my\currencyconverter\project1\source.cpp(174): warning C4018: <: несоответствие типов со знаком и без знака
   Project1.vcxproj -> D:\GitHub\my\CurrencyConverter\Debug\Project1.exe
